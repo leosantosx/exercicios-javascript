@@ -1,0 +1,33 @@
+#app{
+    width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #eff2f5;
+}
+
+.botao-elemento{
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    padding: 20px 10px;
+    color: #fff;
+    background-color: #3d517e;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.botao-elemento:active{
+    background-color: #2b3a5f;
+    transform: translateY(1px);
+}
+
+.element{
+    height: 100px;
+    width: 100px;
+    background-color: #1e90ff;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+}
