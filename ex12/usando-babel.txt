@@ -1,0 +1,36 @@
+Usando o babel
+
+- instala o @babel/cli => yarn add @babel/cli
+- instala o @babel/core => yarn add @babel/core
+- instala o @babel/preset-env => yarn add @babel/preset-env
+
+veja que é criado uma pasta node_modules, yarn.lock e package.json
+
+em seguida crie novo arquivo chamado ".babelrc" e main.js
+
+no arquivo main.js é onde você vai escrever o seu código javascript
+
+dentro do arquivo .babelrc coloque: 
+	{
+  	  "presets": ["@babel/preset-env"]
+	}
+
+E dentro do arquivo package.json coloque:
+	"scripts": {
+	    "dev": "babel ./main.js -o bundle.js -w"
+	}
+
+logo, rode o comando "yarn dev"
+veja que ira ser criado um arquivo bundle.js com o código compatível para todos navegadores.
+
+
+
+
+
+
+
+
+
+
+
+
