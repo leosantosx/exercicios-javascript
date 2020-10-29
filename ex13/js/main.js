@@ -1,16 +1,23 @@
 "use strict"
 
-class TodoList{
+class List {
     constructor() {
         this.todos = [];
     }
 
-    addTodo(newTodo) {
-        this.todos.push(newTodo);
-        console.log(this.todos);
+    addTodo(newTodo){
+        this.todos.push(newTodo)
+    }
+}
+
+class TodoList extends List{
+    constructor(){
+        super();
+        this.nome = 'Leo';
     }
 
     listTodo(){
+        console.log(this.nome);
         return this.todos
     }
 }
