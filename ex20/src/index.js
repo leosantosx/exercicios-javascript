@@ -1,4 +1,4 @@
-import './assets/css/style.css'
-import exemple from './components/example'
+import './assets/styles/main.scss';
+import example from './components/example';
 
-document.body.append(exemple())
+document.body.append(example());

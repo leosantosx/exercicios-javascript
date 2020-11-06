@@ -1,7 +1,7 @@
-export const exemple = () => {
-    const exempleComponent = document.createElement('div');
-    exempleComponent.innerHTML = `
-        <p>Hi, i'm a exemple component :) </p>`
+const example = () => {
+  const exampleComponent = document.createElement('div');
+  exampleComponent.innerHTML = "<p class='example'>Hi, i'm a example component :)</p>";
+  return exampleComponent;
+};
 
-    return exempleComponent
-}
+export default example;
