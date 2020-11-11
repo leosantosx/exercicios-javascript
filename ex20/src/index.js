@@ -1,4 +1,3 @@
-import './assets/styles/main.scss';
-import example from './components/example';
+import { exemple } from './components/exemple'
 
-document.body.append(example());
+document.body.prepend(exemple())
