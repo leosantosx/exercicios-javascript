@@ -1,4 +1,22 @@
+const path = require('path')
+
 module.exports ={
-    entry: '',
-    
-}
+    mode: 'development',
+    entry: path.resolve(__dirname, 'src', 'index.jsx'),
+    output: {
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js',
+    },
+    resolve: {
+        extensions: ['.jsx', '.js'],
+    },
+    module: {
+        rules: [
+            {
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                use: 'babel-loader',
+            }
+        ]
+    },
+};
