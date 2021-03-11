@@ -1,17 +1,12 @@
-export function RepositoryList({ repository }) {
+import { RepositoryItem } from "./RepositoryItem";
+
+export function RepositoryList({ repositories }) {
     return (
         <section className="repository-list">
-            <h1>Lista de repositórios</h1>
-
             <ul>
-                <li>
-                    <strong>{repository.name}</strong>
-                    <p>{repository.description}</p>
-
-                    <a href={repository.html_url}>
-                        Acessar repositório
-                    </a>
-                </li>
+                {repositories.map(repository => 
+                    <RepositoryItem key={repository.id} repository={repository}/>
+                )}
             </ul>
         </section>
     )

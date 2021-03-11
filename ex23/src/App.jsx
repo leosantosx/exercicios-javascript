@@ -13,9 +13,9 @@ export function App(){
 
     return (
         <>
-        {repositories.map(repository => 
-            <RepositoryList key={repository.id} repository={repository} />
-        )}
+            <h1>Lista de repositóries</h1>
+
+            <RepositoryList repositories={repositories} />
         </>
     )
 }
