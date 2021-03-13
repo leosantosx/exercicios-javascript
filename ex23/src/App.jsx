@@ -12,10 +12,6 @@ export function App(){
     }, [])
 
     return (
-        <>
-            <h1>Lista de repositóries</h1>
-
-            <RepositoryList repositories={repositories} />
-        </>
+        <RepositoryList repositories={repositories} />
     )
 }
