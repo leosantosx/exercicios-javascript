@@ -8,7 +8,7 @@ const isDevelopment = process.env.NODE_ENV !== 'production'
 module.exports = {
     
     mode: isDevelopment ? 'development' : 'production',
-    entry: path.resolve(__dirname, 'src', 'index.jsx'),
+    entry: path.resolve(__dirname, 'src', 'index.tsx'),
     devtool: isDevelopment? 'eval-source-map' : 'source-map',
 
     output: {
@@ -17,7 +17,7 @@ module.exports = {
     },
 
     resolve: {
-        extensions: ['.jsx', '.js'],
+        extensions: ['.jsx', '.tsx', '.js', '.ts'],
     },
 
     devServer: {
@@ -35,7 +35,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx$/,
+                test: /\.(j|t)sx$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
